@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service</title>
+    <link rel="stylesheet" href="service.css" />
+    
+    <style>
+      ul li a {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+
+        padding-top: 15px;
+      }
+      ul li a:hover {
+        color: #fff;
+        background: rgb(116, 239, 243);
+        color: black;
+        font-weight: bolder;
+
+        padding: 15px;
+        width: 100px;
+
+        opacity: 0.6;
+        transition: 0.3s;
+
+        border-radius: 10%;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <div
+        id="sidemenu"
+        style="
+          width: 20%;
+          height: 1247px;
+          /* background: red; */
+          float: left;
+          border-right: turquoise 1px solid;
+        "
+      >
+        <img class="logo" src="images/Screenshot_93.png" alt="our logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Friends</a></li>
+          <!-- <li><a href="#">Option 2</a></li>
+          <li><a href="#">Option 3</a></li> -->
+        </ul>
+      </div>
+
+      <div
+        id="maincontent"
+        style="
+          width: 80%;
+          margin-left: 20.5%;
+          height: 747px;
+          background: transparent;
+          position: absolute;
+        "
+      >
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <!-- <script rel="text/javascript" href="camera.js"></script> -->
+        <!-- The form -->
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search" />  
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <h2 style="color: whitesmoke; margin-left: 20px">Explore your Songs</h2>
+        <div class="wrapper">
+          <div class="item">box1</div>
+          <div class="item">box2</div>
+          <div class="item">box3</div>
+          <div class="item">box4</div>
+          <div class="item">box5</div>
+          <div class="item">box6</div>
+          <div class="item">box7</div>
+          <div class="item">box8</div>
+          <div class="item">box9</div>
+          <div class="item">box10</div>
+          <div class="item">box11</div>
+          <div class="item">box12</div>
+          <div class="item">box13</div>
+          <div class="item">box14</div>
+          
+        </div>
+        <h2 style="color: whitesmoke; margin-left: 20px">
+          Songs based on mood
+        </h2>
+
+        <div style="background: none" class="flex-container">
+          <div style="background: none" class="flex-child">
+            <link
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              rel="stylesheet"
+            />
+            <div class="panel panel-primary" id="result_panel">
+              <div class="panel-heading">
+                <h3 class="panel-title">Recommendation List</h3>
+              </div>
+              <div class="panel-body">
+               <!-- <ul class="list-group">
+                   <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li>
+                  <li class="list-group-item"><strong>Song </strong></li> 
+                </ul>-->
+              </div>
+              
+            </div>
+          </div>
+          <div id="video1" class="flex-child flex-container float-container">
+            <ul>
+              <li>
+                <video
+                  style="margin-top: 0px; position: relative"
+                  controls
+                ></video>
+              </li>
+              <li>
+                <button id="btnStart" class="centre btn btn-primary">
+                  START
+                </button>
+              </li>
+            </ul>
+            <div>
+              <br />
+              <button id="btnStop" class="centre btn btn-primary">STOP</button>
+            </div>
+          </div>
+          <br />
+          <!-- <script>
+            let list = document.querySelector(".panel-body");
+            function createList() {
+
+            var ul = document.createElement("ul");
+            ul.className="list-group"
+            list.appendChild(ul);
+            for (i = 0; i < 15; i++) {
+            let li = document.createElement("li");
+            ul.appendChild(li);
+            li.className = "list-group-item";
+            let strong = document.createElement("strong");
+            li.appendChild(strong);
+            strong.innerHTML = "Song";
+            }
+
+          }
+            let Startbtn = document.getElementById("btnStart");
+            Startbtn.addEventListener("click",createList());
+
+          </script> -->
+          <!-- could save to canvas and do image manipulation and saving too -->
+
+          
+            
+         <script type="text/javascript" src="CameraA.js"></script>
+        </div>
+        <div>
+          <br />
+          <br />
+          <video style="margin-left: 660px" id="vid2" controls></video>
+        </div>
+       
+        <div data-video="JiF3pbvR5G0"
+        data-autoplay="0"
+        data-loop="1"
+        id="youtube-audio">
+        </div>
+          </div>
+          <script src="https://www.youtube.com/iframe_api"></script>
+          <script>
+            function onYouTubeIframeAPIReadyx() {
+
+                var ctrlq = document.getElementById("youtube-audio");
+                var icon = document.createElement("img");
+                icon.setAttribute("id", "youtube-icon");
+                icon.style.cssText = "cursor: pointer;cursor:hand";
+                ctrlq.appendChild(icon);
+
+                var div = document.createElement("div");
+                div.setAttribute("id", "youtube-player");
+                ctrlq.appendChild(div);
+
+                var toggleButton = function (play) {
+                var img = play ? "IDzX9gL.png" : "quyUPXN.png";
+                icon.setAttribute("src", "https://i.imgur.com/" + img);
+            }
+
+               ctrlq.onclick = function() {
+                 if ( player.getPlayerState() === YT.PlayerState.PLAYING
+                        || player.getPlayerState() === YT.PlayerState.BUFFERING ) {
+                player.pauseVideo();
+                toggleButton(false);
+                 } else {
+                 player.playVideo();
+                 toggleButton(true);
+              }
+          };
+               var player = new YT.Player('youtube-player', {
+               height: '0',
+               width: '0',
+              videoId: ctrlq.dataset. video,
+              playerVars: {
+                autoplay: ctrlq.dataset.autoplay,
+                  loop: ctrlq.dataset. loop,
+          },
+             events: {
+               'onReady': function(e) {
+               player.setPlaybackQuality("small");
+                toggleButton(player.getPlayerState() !== YT.PlayerState.CUED);
+            },
+              'onStateChange': function(e) {
+                 if (e.data === YT.PlayerState. ENDED) {
+                          toggleButton(false);
+                }
+              }
+            }          
+          });
+        }
+          </script>
+        <div style="height: 100px"></div>
+      </div>
+    </div>
+    
+  </body>
+</html>

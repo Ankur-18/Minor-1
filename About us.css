@@ -1,0 +1,93 @@
+.section {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px, 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(images/headphones_audio_black_134032_3840x2400.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section .container {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 50px 0px;
+}
+
+.container .title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container .title h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #88941e;
+}
+
+.container .title h1::after {
+  content: "";
+  height: 5px;
+  width: 100px;
+  background-color: #72ee4c;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+}
+
+.content {
+  float: left;
+  width: 55%;
+}
+
+.image-section {
+  float: right;
+  width: 40%;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.content .article h3 {
+  color: #eaa8fa;
+  font-size: 18px;
+}
+
+.content .article p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(152, 129, 218);
+}
+
+@media screen and (max-width: 768px) {
+  .section .container {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  .content {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .imaage-section {
+    float: none;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+}

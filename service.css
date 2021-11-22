@@ -1,0 +1,120 @@
+body {
+  background-image: url(images/headphones_audio_black_134032_3840x2400.jpg);
+
+  background-size: cover;
+  background-color: black;
+  background-attachment: fixed;
+  font-family: "Cairo", sans-serif;
+}
+.logo {
+  width: 250px;
+  height: 250px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid turquoise;
+  /* float: left; */
+  width: 79%;
+  background-color: transparent;
+  color: whitesmoke;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* Style the submit button */
+form.example button {
+  width: 40px;
+  padding: 10px;
+  background: turquoise;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  /* display: table; */
+}
+.wrapper {
+  height: 160px;
+  border: 1px solid turquoise;
+  display: flex;
+  overflow-x: auto;
+  cursor: grab;
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wrapper .item {
+  min-width: 200px;
+  height: 140px;
+  line-height: 110px;
+  text-align: center;
+  vertical-align: bottom;
+  background-color: royalblue;
+  margin-right: 2px;
+  perspective: 100px;
+}
+
+video {
+  margin-top: 2px;
+  width: 450px;
+  height: 300px;
+  border: 1px solid turquoise;
+}
+
+#mood {
+  background-color: transparent;
+  border: 2px solid turquoise;
+
+  margin-left: 7px;
+  border-radius: 10%;
+  height: 300px;
+}
+.flex-container {
+  display: flex;
+}
+.flex-child {
+  flex: 1;
+  /* border: 2px solid red; */
+}
+.flex-child:first-child {
+  margin-right: 10px;
+}
+.btn {
+  color: #0099ff;
+  font-weight: bold;
+  border: 3px solid #0099ff;
+  background-color: yellowgreen;
+
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.list-group {
+  max-height: 250px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#btnStart {
+  width: 400px;
+  margin-left: 30px;
+}
